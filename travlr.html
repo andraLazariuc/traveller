@@ -1,0 +1,78 @@
+<!doctype html>  
+<html lang="en">
+<head>
+  
+  <meta charset="tuf-8"/>
+ 
+  <link rel="stylesheet" href="style_Toyr.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Andra Ioana Lazariuc - Proiect TW</title>
+  
+  </head>
+<body>
+        
+          
+  
+  <div id="wrapper">
+    <div id="titlu">
+      <p align="center">  Proiect TW<br>-Travlr-</font></font></p>
+    </div>
+    <div id="cerinte">
+        <p>Folosind informatiile privind cursele aeriene -- oferite, de exemplu, de OpenFlights -- si cele meteo, se doreste implementarea unui instrument Web care sa recomande unui utilizator ce realizeaza voiajuri frecvente anumite zboruri de interes -- pe baza unor preferinte predefinite (e.g., folosind doar compania aeriana C, exceptand zborurile de noapte, via aeroportul A, ruta cea mai relaxanta, incluzand o escala de N ore etc.). Se va lua in calcul programul propriu ori cel al activitatilor unui grup de persoane -- de exemplu, colegii de serviciu -- pe baza resurselor vizand calendarul (e.g., via fisiere iCalendar) preluate de pe diverse situri specifice ori furnizate de utilizator. Sistemul va putea propune rute optime conform unor parametri prestabiliti -- de pilda, in anumite zile din saptamana nu vor fi efectuate zboruri ori in functie de anotimp -- sau respectand restrictiile stipulate de un voiajor. Aplicatia dezvoltata va oferi rapoarte, inclusiv intr-o maniera grafica sugestiva, privind calatoriile curente si cele mai populare rute/destinatii. A se consulta si "Graph of Things".</p>
+      </div>
+    <div id="banner"> 
+      <h1>Descriere</h1>
+      <p> Aplicatia a fost conceputa ca o aplicatiatie de planificare a calatoriilor/vacantelor, atat pentru persoanele care zboara in mod frecvent in interes de serviciu, cat si pentru calatoriile in scop personal. Aplicatia ofera utilizatorului posibilitatea de a-si personaliza profilul prin setarea anumitor preferinte/ filtre si mentinerea unui calendar pentru calatorii. Deasemenea exista posibilitatea de afiliere la un grup cu setari predefinite ( ex. business, backpacker, student, family traveller, luxury travellerrs). Dupa personalizarea profilului se vor putea efectua cautari in functie de destinatie. Rezultatele vor include harti cu zborurile necesare pentru a ajunge la destinatie, informtii meteo si obiective de interes. Dupa alegerea calatoriei, aceasta se va putea salva si va fi updatata pe calendarul personal. Deasemenea se vor putea trimite pe e-mail detaliile aferente calatoriei. <br>
+         </p>
+
+      
+    </div>
+    <div id="tehnologii">
+      <h1>Tehnologii utilizate</h1>
+      <ul>
+        <li>limbaje de programare folosite: JAVASCRIPT, HTML</li>
+        <li>pentru stilizarea paginilor se va folosi CSS  si Bootstrap</li>
+        <li>Apache Server - XAMPP </li>
+        <li>informatiile vor fi stocate intr-o baza de date MySql structurata in urmatoarele tabele: users, groups, airlines, flights, destinations, trips</li>
+        <li>framework folosit: Angular.js</li>
+        <li>Postman- pentru verificarea cererilor & raspunsurilor de la urmatoarele servicii web & API : Wego Flights API, Weather underground API </li>
+      </ul>
+    </div><!--teh-->
+    <div id="arhitectura">
+      <h1>Arhitectura aplicatiei</h1>
+      <p> Aplicatia a fost conceputa ca o Single-Page Applications (SPAs).</p>
+      <img src="img/travlr_main.png" alt="diagrama Travlr" title="diagrama Travlr">
+      <ul>
+        <li>Front-end</li>
+        <li>Back-end</li>
+        <li>Baza de date</li>
+      </ul>
+      <p>Front-end:</p>
+      <ul>
+        <li>Pagins principala::<br>
+          - aplicatia e set destinata persoanleor cu o viata destulde activa , care efectueaza calatorii destul de des. Din acest motiv am ales un template in culori calde/ pastelate cu un meniu simplu, pentru a nu incarca si obosi si mai mult utilizatorii<br>
+          - pe pagina principala, utilizatorul poate cauta o destinatie.In cazul in care e logat i se vor afisa rezulattele in functie de preferinta. Daca nu este logat i se va afisa un selector de preferinte/ optiunea de logare<br>
+          - rezultatul intors va include harti cu zborurile necesare pentru a ajunge la destinatie, informtii meteo si obiective de interes.
+          -<br>
+           <img src="img/DestinationId.png" alt="exemplu destinatie" title="exemplu destinatie">
+          
+          <li>Groups: se vor afisa - intr-un sistem de grid- grupurile la care se poate afilia utilizatorul </li>
+          <li>Destinations: se va afisa o harta cu destinatiile disponibile precum si sugestii cu cele mai populare destinatii</li>
+          <li>Airlines: se vor afisa- intr-un sistem de grid- companiile aeriene incluse in cautare </li>
+        </ul>
+        <p>Back-end:</p>
+        <p>folderul Controllers: am folosit directiva angular ng-controller pentru a defini contollere pentru fiecare element al aplicatiei. Deasemenea am definit directive pentru componentele principale : header, footer, destinations, groups, airlines. In functie de directiva aleasa, se va reincarca dinamic containerul principal cu view-ul aferent. 
+        <p>Baza de date :</p>
+        <p>Se va folosi MySql. Structura BD va fi urmatoarea: users, groups, airlines, flights, destinations, trips </p>
+        <img src="img/diagramaBD.png" alt="diagrama Bazaei de date" title="diagrama Bazaei de date">
+      </div>
+     
+    <div id="implementare">
+    <h1>Progres implementare:</h1>
+    <ul>
+      <li>template-ul pentru partea de front-end - varianta responsive (60%)</li>
+      <li>"routarea" componentelor</li>
+      <li>template pentru logarea utilizatorilor</li>
+
+
+</div><!--wrapper-->

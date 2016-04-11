@@ -1,0 +1,34 @@
+
+!!!!!!!!!!!!!!  ng-repeat !!!!!!!!!!
+
+
+CONTROLLER LOGIN
+
+
+// TO DO : PERSONALIZARE ERORI & VALIDARE
+// ng-class="{'has-success': inputform.email.$dirty && inputform.email.$valid}"
+// ng-class="{'has-success': inputform.password.$dirty && inputform.password.$valid}"
+// http://plnkr.co/edit/guaTzs?p=preview
+// http://codepen.io/sevilayha/pen/xFcdI
+
+//http://stackoverflow.com/questions/11541695/redirecting-to-a-certain-route-based-on-condition
+// header + user http://plnkr.co/edit/2u2ZDE?p=preview
+// header + user http://plnkr.co/edit/LvtVEE?p=preview
+// header + user http://jsfiddle.net/pyeVM/16/ 
+
+
+CONTROLLER indexCtrl
+
+setare atribute true/false dinamic
+
+
+
+HEADER
+
+navbar ->button toggle
+
+
+
+CSS 
+
+!!! completat col-xs la toate elem  !!!
