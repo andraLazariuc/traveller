@@ -1,0 +1,23 @@
+//var angular= require ( "../angular/angular.min.js");
+
+var module= angular.module("login",[]);
+
+module.controller("loginCtrl", function($scope){
+	$scope.data={};
+	$scope.save = function() {
+		//logheaza user & redirect 
+		if ($scope.inputform.$valid)
+			alert('User logged in');
+	}
+
+});
+// TO DO : PERSONALIZARE ERORI & VALIDARE
+// ng-class="{'has-success': inputform.email.$dirty && inputform.email.$valid}"
+// ng-class="{'has-success': inputform.password.$dirty && inputform.password.$valid}"
+// http://plnkr.co/edit/guaTzs?p=preview
+// http://codepen.io/sevilayha/pen/xFcdI
+
+//http://stackoverflow.com/questions/11541695/redirecting-to-a-certain-route-based-on-condition
+// header + user http://plnkr.co/edit/2u2ZDE?p=preview
+// header + user http://plnkr.co/edit/LvtVEE?p=preview
+// header + user http://jsfiddle.net/pyeVM/16/ 

@@ -1,0 +1,65 @@
+var travellerApp = angular.module('travellerApp', [
+  'ngRoute',
+  'travellerControllers'
+]);
+
+travellerApp.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+
+      when('/destinations', {
+        templateUrl: '../index.html',
+        //templateUrl: '../views/destinations.html',
+        controller: 'DestinationsCtrl'
+      }).
+      when('/destinations/:destinationId', {
+      	templateUrl: '../index.html',
+        //templateUrl: '../views/destination-detail.html',
+        controller: 'DestinationDetailCtrl'
+      }).
+
+      when('/groups', {
+      	templateUrl: '../index.html',
+        //templateUrl: '../views/groups.html',
+        controller: 'GroupsCtrl'
+      }).
+      when('/groups/:groupId', {
+      	templateUrl: '../index.html',
+        //templateUrl: '../views/group-detail.html',
+        controller: 'GroupsDetailCtrl'
+      }).
+
+      when('/airlines', {
+      	templateUrl: '../index.html',
+        //templateUrl: '../views/airlines.html',
+        controller: 'AirlinesCtrl'
+      }).
+      when('/airlines/:airlineId', {
+      	templateUrl: '../index.html',
+        //templateUrl: '../views/airline-detail.html',
+        controller: 'AirlinesDetailCtrl'
+      }).
+
+      when('/login', {
+      	templateUrl: '../index.html',
+        //templateUrl: '../views/login.html',
+        controller: 'loginCtrl'
+      }).
+
+      when('/register', {
+      	templateUrl: '../index.html',
+        //templateUrl: '../views/register.html',
+        controller: 'registerCtrl'
+      }).
+
+      when('/', {
+      	templateUrl: '../index.html',
+        //templateUrl: 'index.html',
+        controller: 'indexCtrl'
+      }).
+
+
+      otherwise({
+        redirectTo: '/'
+      });
+  }]);
